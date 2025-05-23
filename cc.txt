@@ -1,0 +1,25 @@
+def is_neon(number):
+    square = number ** 2
+    digit_sum = sum(int(digit) for digit in str(square))
+    return digit_sum == number
+
+# Test
+num = int(input("Enter a number: "))
+if is_neon(num):
+    print(f"{num} is a Neon number.")
+else:
+    print(f"{num} is not a Neon number.")
+
+
+
+import math
+
+arr = [12, 36, 18, 24, 9]
+
+a = min(arr)
+b = max(arr)
+g = math.gcd(a, b)
+
+print("Min:", a)
+print("Max:", b)
+print("GCD:", g)
