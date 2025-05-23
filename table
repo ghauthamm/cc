@@ -1,0 +1,22 @@
+-- First, select the database (optional in some systems)
+USE my_database;
+
+-- Create a table named 'users'
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,  -- auto-incrementing ID
+    name VARCHAR(100),                  -- string field up to 100 chars
+    email VARCHAR(100) UNIQUE,          -- unique email address
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP -- timestamp of creation
+);
+
+
+-- Insert one user
+INSERT INTO users (name, email)
+VALUES ('John Doe', 'john@example.com');
+
+-- Insert multiple users
+INSERT INTO users (name, email)
+VALUES 
+  ('Alice Smith', 'alice@example.com'),
+  ('Bob Johnson', 'bob@example.com'),
+  ('Carol Lee', 'carol@example.com');
