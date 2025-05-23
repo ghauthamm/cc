@@ -1,0 +1,71 @@
+def gcd(a, b):
+    if b == 0:
+        return a
+    else:
+        return gcd(b, a % b)
+
+x = int(input("Enter first number: "))
+y = int(input("Enter second number: "))
+
+print("GCD is:", gcd(x, y))
+
+yum update -y
+yum install -y httpd
+systemctl status httpd
+mkdir demo
+cd demo/
+wget https://github.com/jabastinKEC/cc-ex-4.git
+ls -lrt
+wget https://github.com/jabastinKEC/cc-ex-4/archive/refs/heads/main.zip
+unzip main.zip
+ls
+cd cc-ex-4-main/
+mv * /var/www/html/
+cd /var/www/html/
+systemctl enable httpd
+systemctl start httpd
+
+
+arr = list(map(int, input("Enter array elements: ").split()))
+
+min_val = arr[0]
+max_val = arr[0]
+
+for num in arr:
+    if num < min_val:
+        min_val = num
+    if num > max_val:
+        max_val = num
+
+print("Minimum:", min_val)
+print("Maximum:", max_val)
+
+
+num = int(input("Enter a number: "))
+square = num * num
+digit_sum = 0
+
+while square > 0:
+    digit_sum += square % 10
+    square //= 10
+
+if digit_sum == num:
+    print("Neon Number")
+else:
+    print("Not a Neon Number")
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+</body>
+</html>
+
